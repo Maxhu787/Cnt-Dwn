@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "CntDwn",
+    "slug": "count-down-timer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.g4o2.cntdwn"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c0ef030d-96b7-460d-ac65-fe2976b5291f"
+      }
+    },
+    "owner": "g4o2"
+  }
+}
