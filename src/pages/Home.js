@@ -88,7 +88,35 @@ export default function Home() {
   const getGoals = async () => {
     try {
       const jsonValue = await AsyncStorage.getItem("@goals");
-      return jsonValue != null ? JSON.parse(jsonValue) : [];
+      const jsonValueTemp = [
+        {
+          title: "Read 50 Books",
+          endDate: "2024-12-31T23:59:00Z",
+          startDate: "2023-10-01T00:00:00Z",
+          note: "Currently at 35 books.",
+        },
+        {
+          title: "Save $10,000",
+          endDate: "2024-12-08T00:00:00Z",
+          startDate: "2023-02-01T00:00:00Z",
+          note: "For a big trip abroad.",
+        },
+        {
+          title: "Learn French",
+          endDate: "2024-08-01T12:00:00Z",
+          startDate: "2023-10-01T00:00:00Z",
+          note: "Practice speaking daily.",
+        },
+        {
+          title: "Publish a Novel",
+          endDate: "2025-03-01T17:00:00Z",
+          startDate: "2023-10-01T00:00:00Z",
+          note: "Final draft due next month.",
+        },
+      ];
+
+      // return jsonValue != null ? JSON.parse(jsonValue) : [];
+      return jsonValueTemp;
     } catch (e) {
       console.error("Failed to load goals.", e);
       return [];
@@ -109,10 +137,10 @@ export default function Home() {
   useEffect(() => {
     const calculateAll = () => {
       const newTimeLeftArray = goals.map((goal) =>
-        calculateTimeLeft(goal.endDate),
+        calculateTimeLeft(goal.endDate)
       );
       const newProgressArray = goals.map((goal) =>
-        calculateProgress(goal.startDate, goal.endDate),
+        calculateProgress(goal.startDate, goal.endDate)
       );
       setTimeLeftArray(newTimeLeftArray);
       setProgressArray(newProgressArray);
@@ -126,10 +154,10 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       const newTimeLeftArray = goals.map((goal) =>
-        calculateTimeLeft(goal.endDate),
+        calculateTimeLeft(goal.endDate)
       );
       const newProgressArray = goals.map((goal) =>
-        calculateProgress(goal.startDate, goal.endDate),
+        calculateProgress(goal.startDate, goal.endDate)
       );
       setTimeLeftArray(newTimeLeftArray);
       setProgressArray(newProgressArray);

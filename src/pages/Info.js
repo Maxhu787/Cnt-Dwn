@@ -11,7 +11,7 @@ import { Text } from "react-native-paper";
 export default function Info() {
   const openLink = (url) => {
     Linking.openURL(url).catch((err) =>
-      console.error("Failed to open URL:", err),
+      console.error("Failed to open URL:", err)
     );
   };
 
@@ -29,10 +29,10 @@ export default function Info() {
       </Text>
       <TouchableOpacity
         style={{ marginTop: 20 }}
-        onPress={() => openLink("https://github.com/Maxhu787/count-down-timer")}
+        onPress={() => openLink("https://github.com/Maxhu787/Cnt-Dwn")}
       >
         <Text variant="bodyLarge" style={{ marginTop: 10, color: "blue" }}>
-          https://github.com/Maxhu787/count-down-timer
+          https://github.com/Maxhu787/Cnt-Dwn
         </Text>
       </TouchableOpacity>
       <Text>Github repo</Text>

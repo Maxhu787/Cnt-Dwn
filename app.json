@@ -26,6 +26,9 @@
         "projectId": "c0ef030d-96b7-460d-ac65-fe2976b5291f"
       }
     },
-    "owner": "g4o2"
+    "owner": "g4o2",
+    "ios": {
+      "bundleIdentifier": "com.g4o2.cntdwn"
+    }
   }
 }
