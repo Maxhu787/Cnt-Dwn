@@ -2,7 +2,7 @@
 
 # CntDwn
 
-Count Down app helps you keep track of your dreams and goals and how much time you have left.
+CountDown app helps you keep track of your dreams and goals and how much time you have left.
 
 <img height="400px" src="./CntDwn-App-dark.png" /><img height="400px" src="./CntDwn-App-splash.png" /><img height="400px"  src="./CntDwn-App-light.png" />
 
