@@ -44,6 +44,6 @@ npx expo export --platform web
 
 # info
 
-By <a href="https://maxhu787.github.io/">Hu Kaixiang</a> during 2024 9/22 ~ 10/1<br/>
+By <a href="https://maxhu787.github.io/">Hu Kaixiang</a> 9/22 ~ 10/1<br/>
 https://buymeacoffee.com/g4o2<br/>
 Ethereum: 0x6E6E2561cCfBB0CE08Ed28516c34a278ec18d6D6
